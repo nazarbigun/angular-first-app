@@ -21,6 +21,6 @@ export class EventThumbnailComponent {
     @Output() eventClick = new EventEmitter()
 
     handleClickMe() {
-        this.eventClick.emit('foo')
+        this.eventClick.emit(this.event.name)
     }
 }
